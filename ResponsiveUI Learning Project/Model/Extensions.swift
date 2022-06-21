@@ -13,7 +13,7 @@ import SwiftUI
 extension UISplitViewController {
     open override func viewDidLoad() {
         self.preferredDisplayMode = .twoOverSecondary
-        self.preferredSplitBehavior = .displace
+        self.preferredSplitBehavior = .overlay
         
         //updating primary view column fraction
         self.preferredPrimaryColumnWidthFraction = 0.3

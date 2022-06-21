@@ -13,7 +13,9 @@ struct Sidebar: View {
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(alignment: .leading, spacing: 20) {
-                Image("demtLogo")
+                Image("profile")
+                    .resizedToFill(width: 55, height: 55)
+                    .clipShape(Circle())
                 
                 SidebarButton(icon: "tray.and.arrow.down.fill", title: "Inbox")
                     .padding(.top, 40)
@@ -33,7 +35,7 @@ struct Sidebar: View {
         .padding(.leading, 10)
         .frame(width: (prop.isLandscape ? prop.size.width : prop.size.height) / 4 > 300 ? 300 : (prop.isLandscape ? prop.size.width : prop.size.height) / 4)
         .background {
-            Color.mint
+            Color.indigo.opacity(0.5)
         }
     }
     

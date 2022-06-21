@@ -92,7 +92,7 @@ struct ContentView: View {
         .padding()
         .frame(maxHeight: .infinity, alignment: .top)
         .background {
-            Color.brown
+            Color.purple.opacity(0.5)
                 .ignoresSafeArea()
         }
     }

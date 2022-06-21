@@ -19,7 +19,7 @@ struct DetailView: View {
                     Button {
                         dismiss()
                     } label: {
-                        Image(systemName: "arrow.right")
+                        Image(systemName: "arrow.left")
                             .font(.title3)
                             .foregroundColor(.black)
                     }
